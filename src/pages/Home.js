@@ -7,7 +7,7 @@ export default function Home() {
     let json = await res.json();
     setList(json);
   };
-  //calling the during the page loading
+  //calling during the page loading
   useEffect(() => {
     getData();
   }, []);
@@ -59,7 +59,7 @@ export default function Home() {
                     </a>
                   </div>
                 </div>
-                <a href="" class="nav-item nav-link">
+                <a href="" data-testid="test2" class="nav-item nav-link">
                   Shirts
                 </a>
                 <a href="" class="nav-item nav-link">
